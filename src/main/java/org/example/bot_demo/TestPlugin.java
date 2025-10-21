@@ -27,9 +27,21 @@ public class TestPlugin extends BotPlugin {
 
     @Override
     public int onGroupMessage(Bot bot, GroupMessageEvent event) {
-        if ("KeepCoding".equals(event.getMessage())) {
+        if ("喵喵喵".equals(event.getMessage())) {
+            try {
+                MessageService.localGroupRandom(bot,event,"\n随机猫猫：\n");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }else if("KeepCoding".equals(event.getMessage())){
             try {
                 MessageService.localGroup(bot,event,"","/Pic/2.jpg");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }else if("晚安喵".equals(event.getMessage())){
+            try {
+                MessageService.localGroup(bot,event,"\n辛苦了喵，おやすみ\n","/Pic/11.jpg");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
