@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: bot_demo
+    profiles:
+      active: default
+
+# 该配置为反向连接示例
+server:
+  port: 8083
+  address: 0.0.0.0
+
+shiro:
+  ws:
+    server:
+      enable: true
+      url: /ws/shiro
+
+  plugin-list:
+    - org.example.bot_demo.TestPlugin
