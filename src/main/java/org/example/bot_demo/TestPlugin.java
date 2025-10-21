@@ -6,7 +6,6 @@ import com.mikuac.shiro.dto.event.message.GroupMessageEvent;
 import com.mikuac.shiro.dto.event.message.PrivateMessageEvent;
 import org.example.bot_demo.service.MessageService;
 import org.springframework.stereotype.Component;
-
 import java.io.IOException;
 
 @Component
