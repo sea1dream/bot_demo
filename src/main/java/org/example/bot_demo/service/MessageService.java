@@ -76,9 +76,9 @@ public class MessageService {
     private static List<String> loadAllImgPaths() {
         try {
             var resolver = new PathMatchingResourcePatternResolver();
-            Resource[] resources = resolver.getResources("classpath:/Pic/*.{jpg,png}");
+            Resource[] resources = resolver.getResources("classpath:/Pic/maomao/*.{jpg,png}");
             return Arrays.stream(resources)
-                    .map(r -> "/Pic/" + r.getFilename())
+                    .map(r -> "/Pic/maomao/" + r.getFilename())
                     .collect(Collectors.toList());
         } catch (IOException e) {
             throw new RuntimeException("扫描图片失败", e);

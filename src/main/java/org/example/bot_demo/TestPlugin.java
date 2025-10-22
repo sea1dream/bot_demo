@@ -34,13 +34,13 @@ public class TestPlugin extends BotPlugin {
             }
         }else if("KeepCoding".equals(event.getMessage())){
             try {
-                MessageService.localGroup(bot,event,"","/Pic/2.jpg");
+                MessageService.localGroup(bot,event,"","/Pic/keepcoding/2.jpg");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }else if("晚安喵".equals(event.getMessage())){
             try {
-                MessageService.localGroup(bot,event,"\n辛苦了喵，おやすみ\n","/Pic/11.jpg");
+                MessageService.localGroup(bot,event,"\n辛苦了喵，おやすみ\n","/Pic/goodnight/11.jpg");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
