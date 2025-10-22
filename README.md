@@ -2,7 +2,7 @@
 
 ### 1.安装
 
-[NepCatQQ]([Shell | NapCatQQ](https://napneko.github.io/guide/boot/Shell))
+[NapCatQQ](https://napneko.github.io/guide/boot/Shell)
 
 ### 2.用JAVA操作
 
